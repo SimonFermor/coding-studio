@@ -29,6 +29,10 @@ li {
   line-height: 1.4 ;
 }
 
+a { 
+	text-decoration: none; 
+}
+
 /* Header, <header>
    header   - container
    h1       - project name
