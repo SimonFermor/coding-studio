@@ -1,0 +1,16 @@
+RGB colors
+
+Kahn Academy Computer Programming
+https://www.khanacademy.org/computing/computer-programming
+
+Started using shapes in the ProcessingJS library (ellipse first)
+
+Processing JS library: http://processingjs.org/reference/
+
+Using console.log()
+Can print out what is in the parentheses
+
+http://ondras.zarovi.cz/demos/rubik/
+http://bost.ocks.org/mike/nations/
+http://software-carpentry.org/
+https://www.codecademy.com/learn/all - animate your name

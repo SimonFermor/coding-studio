@@ -1,0 +1,4 @@
+http://ondras.zarovi.cz/demos/rubik/
+http://bost.ocks.org/mike/nations/
+http://software-carpentry.org/
+https://www.codecademy.com/learn/all - animate your name
