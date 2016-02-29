@@ -1,3 +1,4 @@
+// Currently included in init.js
 $(function(){
 
     $("ul.dropdown li").hover(function(){
