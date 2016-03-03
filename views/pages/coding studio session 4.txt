@@ -1,0 +1,28 @@
+Coding Studio Session 4 and Email to Parents
+
+Kahn Academy parents account - learn something yourself
+
+eg Math - useful for helping kids
+
+Future:
+Golden triangle, number sequence 1, 1, 2, 3, 5
+
+noStroke();
+background(R,G,B);
+fill(R,G,B);
+stroke
+strokeWeight(37)
+line(x,y,x,y)
+0,0,0 ?
+255,255,255?
+
+Order of commands
+Color be
+1, 2, 4, 8, 16, 32, 64
+
+parameters
+variables
+documentation
+
+arc
+
