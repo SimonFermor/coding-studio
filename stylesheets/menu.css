@@ -1,36 +1,25 @@
 /* Based on css-tricks jQuery drop down menu example */
 
-* 									{ margin: 0; padding: 0; }
-ul									{ list-style: none; }
+/* LEVEL ONE */
+ul.dropdown                 { position: relative; }
+ul.dropdown li              { color: #63c0f5; font-weight: bold; float: left; zoom: 1; background: #000; }
 
-/* 
-	LEVEL ONE
-*/
-ul.dropdown                         { position: relative; }
-ul.dropdown li                      { color: #63c0f5; font-weight: bold; float: left; zoom: 1; background: #000; }
+ul.dropdown a:hover		    { color: red; }
+ul.dropdown a:active        { color: #ffa500; }
 
-ul.dropdown a:hover		            { color: red; }
-ul.dropdown a:active                { color: #ffa500; }
+ul.dropdown li a            { padding: 2px 1px; border-right: 1px solid #333; }
+ul.dropdown li:last-child a	{ border-right: none; }
+ul.dropdown li:hover        { color: #b5e853; position: relative; }
+ul.dropdown li.hover a      { color: #b5e853;}
 
-ul.dropdown li a                  	{ padding: 2px 1px; border-right: 1px solid #333; }
-ul.dropdown li:last-child a         { border-right: none; }
-ul.dropdown li:hover                { color: #b5e853; position: relative; }
-ul.dropdown li.hover a              { color: #b5e853;}
+/* LEVEL TWO */
+ul.dropdown ul 				{ visibility: hidden; position: absolute; top: 100%; left: 0; }
+ul.dropdown ul li 			{ font-weight: normal; background: #black; color: #000; 
+							  border-bottom: 1px solid #ccc; float: none; line-height:1;
+							  margin-left: 0px;}
+/* IE 6 & 7 Needs Inline Block */
+ul.dropdown ul li a			{ border-right: none; width: 100%; display: inline-block; } 
 
-/* 
-	LEVEL TWO
-*/
-ul.dropdown ul 						{ visibility: hidden; position: absolute; top: 100%; left: 0; }
-ul.dropdown ul li 					{ font-weight: normal; background: #black; color: #000; 
-									  border-bottom: 1px solid #ccc; float: none; line-height:1;
-									  	margin-left: 0px;
-}
-									  
-                                    /* IE 6 & 7 Needs Inline Block */
-ul.dropdown ul li a					{ border-right: none; width: 100%; display: inline-block; } 
-
-/* 
-	LEVEL THREE
-*/
-ul.dropdown ul ul 					{ left: 100%; top: 0; }
-ul.dropdown li:hover > ul 			{ visibility: visible; }
+/* LEVEL THREE */
+ul.dropdown ul ul 			{ left: 100%; top: 0; }
+ul.dropdown li:hover > ul 	{ visibility: visible; }
