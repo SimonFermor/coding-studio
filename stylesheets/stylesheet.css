@@ -43,8 +43,8 @@ header {
   background: rgba(0, 0, 0, 0.1);
   width: 100%;
   border-bottom: 1px dashed #b5e853;
-  padding: 20px 0;
-  margin: 0 0 60px 0;
+  padding: 30px 0;
+  margin: 0 0 20px 0;
 }
 
 header h1 {
@@ -141,6 +141,7 @@ ul li {
   display: inline;
 }
 
+/*
 ul li:before {
   content: ">>";
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
@@ -150,10 +151,12 @@ ul li:before {
   margin-right: 21px;
   line-height: 16px;
 }
+*/
 
 ul li ul li {
 	display: block;
 }
+
 blockquote {
   color: #aaa;
   padding-left: 10px;
@@ -241,6 +244,10 @@ a {
   color: #63c0f5;
   text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
   text-decoration: none
+}
+
+a:hover {
+	color: #b5e853;
 }
 
 /* Clearfix */
