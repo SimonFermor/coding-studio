@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/menu.css" media="screen">
+
+	<script src="http://code.jquery.com/jquery-2.2.0.js"></script>
+	<script src="../../scripts/menu.js"></script>
+
+    <title>Coding-Studio by Simon Fermor</title>
+</head>
+
+<body>
+
+    <header>
+		<div id="menu">
+		</div>
+    </header>
+
+	<div class="container">
+		<h1>Useful Links</h1>
+		<section id="links">
+		</section>
+	</div>
+	
+<script>
+$(document).ready(function(){
+	
+	var display_links = function(data) {
+		var html = '<ul class="links">';
+		console.log(data);
+		console.log(data[0]);
+		for (var i=0;i<data.length;i++) {
+			html = html + '<li><a href="' + data[i].u + '">' + data[i].d + '</a></li>';
+		}
+		html = html + '</ul>';
+		$('#links').html(html);
+	};
+
+	$.ajax({
+			//type: 'GET',
+			url: 'http://feeds.delicious.com/v2/json/simon.fermor/coding?count=100&callback=display_links',
+			//jsonp: 'display_links',
+			jsonpCallback: 'display_links',
+			dataType: 'jsonp',
+			crossDomain: true,
+			cache: false,
+			success: display_links,
+			error: function() { alert('error'); }
+			});
+});
+</script>
+
+</body>
+
+</html>
