@@ -14,124 +14,127 @@
     <title>Coding-Studio by Simon Fermor</title>
 </head>
 
-  <body>
+<body>
 
-    <header>
-		<div id="menu">
-		</div>
-    </header>
+<header>
+	<div id="menu">
+	</div>
+</header>
 
-	<div class="container">
+<div class="container">
+
 	<h1>Session 2</h1>
-	<section id="sign-up-sites">
-	<h3>What we did</h3>
-	<p>
-	We started the Kahn Academy Computer Programming course - Introduction to JS (JavaScript): Drawing and Animation.  First we watched the "What is programming video".  Next we watched video and worked
-	through the challenges in "Drawing Basics".
-	</p>
-<p>First we made a simple snowman, for example:<br>
-
-ellipse(200,350,100,100);<br>
-
-ellipse(200,300,60,60);<br>
-
-ellipse(200,265,40,40);<br>
-
-Note that the ellipses are drawn in sequence, with the first one drawn behind the next etc.
-</p>
-<p>
-Then we experimented with rectangles and lines.
-</p>
-	<p>
-	We learnt that all statements (commands) are on a line and end in a semi-colon ;
-	</p>
 	
-	<p>
-	We learnt that output can be sent to the console log.  The console log is a way of getting information from a program as it is running.
-	</p>
-	<p>
-	For example: console.log("This is a test message");
-	</p>
-	
-	<p>
-	We looked at how colors on web pages can be set using the RGB (Red-Green-Blue) color model.
-	</p>
-	<h3>Processing JS Shape Functions (Commands)</h3>
+	<section>
+		<h3>What we did</h3>
+		<p>
+		We started the Kahn Academy Computer Programming course - Introduction to JS (JavaScript): Drawing and Animation.  First we watched the "What is programming video".  Next we watched video and worked
+		through the challenges in "Drawing Basics".
+		</p>
+		<p>First we made a simple snowman, for example:</p>
+		<pre>
+		ellipse(200,350,100,100);
+		ellipse(200,300,60,60);
+		ellipse(200,265,40,40);
+		</pre>
+		Note that the ellipses are drawn in sequence, with the first one drawn behind the next etc.
+		</p>
+		<p>
+		Then we experimented with rectangles and lines.
+		</p>
+			<p>
+			We learnt that all statements (commands) are on a line and end in a semi-colon ;
+			</p>
+			
+			<p>
+			We learnt that output can be sent to the console log.  The console log is a way of getting information from a program as it is running.
+			</p>
+			<p>
+			For example: console.log("This is a test message");
+			</p>
+			
+			<p>
+			We looked at how colors on web pages can be set using the RGB (Red-Green-Blue) color model.
+			</p>
+			
+			</section>
 
-	<h4>ellipse(x,y,width,height);</h4>
-	<table>
-<tr>
-	<td>x:</td>
-	<td>distance of center going right from the top left corner</td>
-</tr>
-<tr>
-	<td>y:</td>
-	<td>distance of center going down from top left corner</td>
-</tr>
-<tr>
-	<td>width:</td>
-	<td>overall width of ellipse</td>
-</tr>
-<tr>
-	<td>height:</td>
-	<td>overall height of ellipse</td>
-</tr>
-</table>
+			<section>
+			<h3>Processing JS Shape Functions (Commands)</h3>
 
-<h4>rect(x,y,width,height);</h4>
-<table>
-<tr><td colspan="2">x and y are to the top corner!</td></tr>
-<tr>
-	<td>x:</td>
-	<td>distance of top left rectangle corner going right from the top left corner</td>
-</tr>
-<tr>
-	<td>y:</td>
-	<td>distance of top left rectangle corner going down from top left corner</td>
-</tr>
-<tr>
-	<td>width:</td>
-	<td>overall width of rectangle</td>
-</tr>
-<tr>
-	<td>height:</td>
-	<td>overall height of rectangle</td>
-</tr>
-</table>
+			<h4>ellipse(x,y,width,height);</h4>
+			<table>
+		<tr>
+			<td>x:</td>
+			<td>distance of center going right from the top left corner</td>
+		</tr>
+		<tr>
+			<td>y:</td>
+			<td>distance of center going down from top left corner</td>
+		</tr>
+		<tr>
+			<td>width:</td>
+			<td>overall width of ellipse</td>
+		</tr>
+		<tr>
+			<td>height:</td>
+			<td>overall height of ellipse</td>
+		</tr>
+		</table>
 
-<h4>fill(r,g,b);</h4>
-<table>
-<tr><td colspan=2>fill(); sets the color for following shape commands</td></tr>
-<tr><td colspan=2>r,g,b color numbers are between 0 and 255</td></tr>
-<tr>
-<td>r</td>
-<td>Red</td>
-</tr>
-<tr>
-<td>g</td>
-<td>Green</td>
-</tr>
-<tr>
-<td>b</td>
-<td>Blue</td>
-</tr>
-</table>
+		<h4>rect(x,y,width,height);</h4>
+		<table>
+		<tr><td colspan="2">x and y are to the top corner!</td></tr>
+		<tr>
+			<td>x:</td>
+			<td>distance of top left rectangle corner going right from the top left corner</td>
+		</tr>
+		<tr>
+			<td>y:</td>
+			<td>distance of top left rectangle corner going down from top left corner</td>
+		</tr>
+		<tr>
+			<td>width:</td>
+			<td>overall width of rectangle</td>
+		</tr>
+		<tr>
+			<td>height:</td>
+			<td>overall height of rectangle</td>
+		</tr>
+		</table>
 
-<h3>Resources</h3>
-<ol>
-<li>Kahn Academy Computer Programming: <a href="https://www.khanacademy.org/computing/computer-programming">https://www.khanacademy.org/computing/computer-programming</a>
-</li>
-<li>
-Tour of Kahn Academy Programming: <a href="https://youtu.be/jsDOHy8pHTg">https://youtu.be/jsDOHy8pHTg</a>
-</li>
-<li>
-Processing JS library reference: <a href="http://processingjs.org/reference/">http://processingjs.org/reference/</a>
-</li>
-<li>
-Visualize RGB color combinations: <a href="http://colorizer.org">http://colorizer.org</a>
-</li>
-</ol>
-</section>
+		<h4>fill(r,g,b);</h4>
+		<table>
+		<tr><td colspan=2>fill(); sets the color for following shape commands</td></tr>
+		<tr><td colspan=2>r,g,b color numbers are between 0 and 255</td></tr>
+		<tr>
+		<td>r</td>
+		<td>Red</td>
+		</tr>
+		<tr>
+		<td>g</td>
+		<td>Green</td>
+		</tr>
+		<tr>
+		<td>b</td>
+		<td>Blue</td>
+		</tr>
+		</table>
+	</section>
+
+	<section>
+		<h3>Resources</h3>
+		<ul class="links">
+			<li><a href="https://www.khanacademy.org/computing/computer-programming">Kahn Academy Computer Programming</a>
+			</li>
+			<li><a href="https://youtu.be/jsDOHy8pHTg">Tour of Kahn Academy Programming</a>
+			</li>
+			<li><a href="http://processingjs.org/reference/">Processing JS library reference</a>
+			</li>
+			<li><a href="http://colorizer.org">Visualize RGB color combinations</a>
+			</li>
+		</ul>
+	</section>
 </div>
 
 </body>

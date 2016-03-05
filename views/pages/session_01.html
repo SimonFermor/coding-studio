@@ -23,101 +23,114 @@
 
 	<div class="container">
 	<h1>Session 1</h1>
+
 	<section id="sign-up-sites">
-	<h3>What we did</h3>
-	<p>
-	We worked through sections 1 to 11 in the first lesson in the Codecademy 
-	<a href="https://www.codecademy.com/learn/javascript">JavaScript</a> course.  We
-	then remixed a project on <a href="https://thimble.mozilla.org/">Mozilla Thimble</a>.
-	</p>
+		<h3>What we did</h3>
+		<p>
+		We worked through sections 1 to 11 in the first lesson in the Codecademy 
+		<a href="https://www.codecademy.com/learn/javascript">JavaScript</a> course.  We
+		then remixed a project on <a href="https://thimble.mozilla.org/">Mozilla Thimble</a>.
+		</p>
+	</section>
 
-	<h3>Key Web Technologies</h3>
+	<section>
+		<h3>Key Web Technologies</h3>
+		<table>
+			<tr>
+				<td>Technology</td>
+				<td>What It Does</td>
+			</tr>
+			<tr>
+				<td>CSS</td>
+				<td>Cascading Style Sheets - used to define fonts, layout and other formatting for web pages</td>
+			</tr>
+			<tr>
+				<td>HTML</td>
+				<td>Hypertext Markup Language - used to define the structure and content of a web page</td>
+			</tr>
+			<tr>
+				<td>JavaScript</td>
+				<td>Coding language - can be used to provide animation and interactivity in web pages</td>
+			</tr>
+		</table>
+	</section>
+	
+	<section>
+		<h3>Keyboard Short-Cuts</h3>
+		<table>
+		<tr><td>Ctrl + X</td><td>Cut</td></tr>
+		<tr><td>Ctrl + C</td><td>Copy</td></tr>
+		<tr><td>Ctrl + V</td><td>Paste</td></tr>
+		</table>
+	</section>
 
-	<table>
-<tr>
-	<td>Technology</td>
-	<td>What It Does</td>
-</tr>
-<tr>
-	<td>CSS</td>
-	<td>Cascading Style Sheets - used to define fonts, layout and other formatting for web pages</td>
-</tr>
-<tr>
-	<td>HTML</td>
-	<td>Hypertext Markup Language - used to define the structure and content of a web page</td>
-</tr>
-<tr>
-	<td>JavaScript</td>
-	<td>Coding language - can be used to provide animation and interactivity in web pages</td>
-</tr>
-</table>
-<h3>Keyboard Short-Cuts</h3>
-<table>
-<tr><td>Ctrl + X</td><td>Cut</td></tr>
-<tr><td>Ctrl + C</td><td>Copy</td></tr>
-<tr><td>Ctrl + V</td><td>Paste</td></tr>
-</table>
+	<section>
+		<h3>Getting Started with JavaScript</h3>
 
-<h3>Getting Started with JavaScript</h3>
+		<h4><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">Strings</a> - A string is a sequence of characters</h4>
+		<p>a-z, space, number characters etc.</p>
+		<p>Example: "this is a string"<p>
+		<p>Strings have a length property, the number of characters in the string.
+		For example to find the length of a string:<br>
+		"this is my string".length<br>
+		</p>
 
-<h4><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">Strings</a> - A string is a sequence of characters</h4>
-<p>a-z, space, number characters etc.</p>
-<p>Example: "this is a string"<p>
-<p>Strings have a length property, the number of characters in the string.
-For example to find the length of a string:<br>
-"this is my string".length<br>
-</p>
+		<h4>Numbers - integers (..., -2, -1, 0, 1, 2, 3, ...) or decimal</h4>
+		<p>Calculations can be made using numbers: 3+4;</p>
+		<p>Use * for multiplication, / for division</p>
 
-<h4>Numbers - integers (..., -2, -1, 0, 1, 2, 3, ...) or decimal</h4>
-<p>Calculations can be made using numbers: 3+4;</p>
-<p>Use * for multiplication, / for division</p>
+		<h4>Boolean - true / false (yes/no):</h4>
+		<p>12 > 100; // false (no)<br>
+		"this" == "that"
+		"This sentance is longer than 10 characters!" > 10;
+		</p>
 
-<h4>Boolean - true / false (yes/no):</h4>
-<p>12 > 100; // false (no)<br>
-"this" == "that"
-"This sentance is longer than 10 characters!" > 10;
-</p>
+		<h4>Operators</h4>
+		<p>
+		> greater than<br>
+		< less than<br>
+		<= less than or equal to<br>
+		>= greater than or equal to<br>
+		=== equal to<br>
+		!== not equal to<br>
+		</p>
 
-<h4>Operators</h4>
-<p>
-> greater than<br>
-< less than<br>
-<= less than or equal to<br>
->= greater than or equal to<br>
-=== equal to<br>
-!== not equal to<br>
-</p>
+		<h4>Comments</h4>
+		<p>Start a line with //, for example:<br>
+		// this line is a comment
+		</p>
 
-<h4>Comments</h4>
-<p>Start a line with //, for example:<br>
-// this line is a comment
-</p>
+		<h4>Getting a user response</h4>
+		<p>
+		confirm() can be used to get a true / false response:<br>
+		confirm('My message');</br>
+		<br>
+		prompt() can be used to get a string:<br>
+		prompt("What is your name?");
+		</p>
+	</section>
 
-<h4>Getting a user response</h4>
-<p>
-confirm() can be used to get a true / false response:<br>
-confirm('My message');</br>
-<br>
-prompt() can be used to get a string:<br>
-prompt("What is your name?");
-</p>
+	<section>
+		<h3>Challenges</h3>
+		<ol>
+		<li>Cut and paste a long string (all on one line) and see how long it is</li>
+		<li>Ask the user whether it is now January</li>
+		<li>Ask the user what year it is</li>
+		</ol>
+	</section>
 
-<h3>Challenges</h3>
-<ol>
-<li>Cut and paste a long string (all on one line) and see how long it is</li>
-<li>Ask the user whether it is now January</li>
-<li>Ask the user what year it is</li>
-</ol>
+	<section>
+		<h3>Questions</h3>
+		<ul>
+		<li>What happens when a string is on more than one line?</li>
+		</ul>
+	</section>
 
-<h3>Questions</h3>
-<ol>
-<li>What happens when a string is on more than one line?</li>
-</ol>
+	<section>
+		<h3>Resources</h3>
+		<a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript>Mozilla JavaScript guides and references</a>
+	</section>
 
-<h3>Resources</h3>
-<a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript>Mozilla JavaScript guides and references</a>
-
-</section>
 </div>
 	
 </body>

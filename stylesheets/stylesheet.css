@@ -1,4 +1,6 @@
-*							{ margin: 0; padding: 0;}
+* {
+	margin: 0; padding: 0;
+}
 
 body {
   margin: 0;
@@ -23,12 +25,26 @@ section {
 	margin: 0 0 20px 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h5, h6 {
   margin: 0 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  color: #b5e853;
+  letter-spacing: -0.03em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+               0 0 5px rgba(181, 232, 83, 0.1),
+               0 0 10px rgba(181, 232, 83, 0.1);
 }
 
 li {
   line-height: 1.4 ;
+}
+
+p {
+	margin-top: 10px;
 }
 
 a { 
@@ -95,16 +111,6 @@ section img {
   max-width: 100%
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #b5e853;
-  letter-spacing: -0.03em;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
-}
-
 #main_content h1 {
   font-size: 30px;
 }
@@ -117,6 +123,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
 }
 
+h4 {
+	  margin-top: 20px;;
+}
 #main_content h4 {
   font-size: 14px;
 }
@@ -168,7 +177,7 @@ pre {
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 10px;
   font-size: 14px;
-  color: #b5e853;
+  /* color: #b5e853; */
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
