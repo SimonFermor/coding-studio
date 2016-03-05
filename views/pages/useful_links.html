@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
     <link rel="stylesheet" type="text/css" href="../../stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="../../stylesheets/github-dark.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../../stylesheets/menu.css" media="screen">
 
 	<script src="http://code.jquery.com/jquery-2.2.0.js"></script>
@@ -41,10 +40,11 @@ $(document).ready(function(){
 		$('#links').html(html);
 	};
 
+	var url = 'http://feeds.delicious.com/v2/json/simon.fermor/coding+studio?count=100&callback=display_links';
+	console.log(url);
+	
 	$.ajax({
-			//type: 'GET',
-			url: 'http://feeds.delicious.com/v2/json/simon.fermor/coding%20studio?count=100&callback=display_links',
-			//jsonp: 'display_links',
+			url: url,
 			jsonpCallback: 'display_links',
 			dataType: 'jsonp',
 			crossDomain: true,
