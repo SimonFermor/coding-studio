@@ -13,6 +13,8 @@ header += '				<li><a href="/coding-studio/views/pages/session_01.html">Session 
 header += '				<li><a href="/coding-studio/views/pages/session_02.html">Session 2</a></li>';
 header += '				<li><a href="/coding-studio/views/pages/session_03.html">Session 3</a></li>';
 header += '				<li><a href="/coding-studio/views/pages/session_04.html">Session 4</a></li>';
+header += '				<li><a href="/coding-studio/views/pages/session_05.html">Session 5</a></li>';
+header += '				<li><a href="/coding-studio/views/pages/session_06.html">Session 6</a></li>';
 header += '			</ul>';
 header += '		</li><li>&nbsp;|&nbsp;</li>';
 header += '		<li><a href="/coding-studio/views/pages/resources.html">Resources</a></li><li>&nbsp;|&nbsp;</li>';
