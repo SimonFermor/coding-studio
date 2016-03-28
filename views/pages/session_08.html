@@ -21,20 +21,24 @@
 </header>
 
 <div class="container">
-<h1>Session 7</h1>
+<h1>Session 8</h1>
 
 	<section>
 
 <p>We started by talking about the Google Go challenge and artificial intelligence.</p>
 
-  <p>We watched a video about Go and how it is so difficult for computers</p>
+  <p>We watched a <a href="https://www.youtube.com/watch?v=DFaUMjbsSPE">video</a> about Go and how it is so difficult for computers</p>
 
-  <p>We tried a quiz for a visual Turing test</p>
+  <p>We tried a <a href="https://www.newscientist.com/article/visual-turing-test">quiz</a>
+  for a visual Turing test</p>
 
-		<p>We continued with Blockly and played the Turtle games</p>
+		<p>We continued with Blockly and played the Turtle <a href="https://blockly-games.appspot.com/?lang=en">games</a></p>
 
-    <p>We then looked at some games from a JavaScript book and made changes to the hangman game</p>
-    
+    <p>We then looked at some games from a
+    <a href="https://www.packtpub.com/web-development/javascript-projects-kids">JavaScript book</a>
+    and made changes to the hangman game
+    (using the <a href="https://atom.io/">Atom code editor</a>)</p>
+
     <table>
       <tr style="text-align:top;">
         <td>Level</td>
@@ -184,7 +188,34 @@ for (var count3 = 0; count3 < 360; count3++) {
              <td>9</td>
              <td>Draw three stars and a moon crescent</td>
              <td><pre>
-
+penColour('#ffff00');
+for (var count2 = 0; count2 < 3; count2++) {
+ for (var count = 0; count < 5; count++) {
+   moveForward(50);
+   turnRight(144);
+ }
+ penUp();
+ moveForward(150);
+ turnRight(120);
+ penDown();
+}
+turnLeft(90);
+penUp();
+moveForward(100);
+penDown();
+for (var count3 = 0; count3 < 360; count3++) {
+ moveForward(50);
+ moveBackward(50);
+ turnRight(1);
+}
+turnRight(120);
+penColour('#000000');
+moveForward(20);
+for (var count4 = 0; count4 < 360; count4++) {
+ moveForward(50);
+ moveBackward(50);
+ turnRight(1);
+}
              </pre></td>
            </tr>
            <tr>
