@@ -47,8 +47,8 @@ p {
 	margin-top: 10px;
 }
 
-a { 
-	text-decoration: none; 
+a {
+	text-decoration: none;
 }
 
 /* Header, <header>
@@ -199,7 +199,16 @@ th {
 
 td {
   padding: 5px 10px;
+	vertical-align: top;
 }
+
+table {
+     border-collapse: collapse;
+ }
+
+table, th, td {
+     border: 1px solid green;
+ }
 
 hr {
   height: 0;

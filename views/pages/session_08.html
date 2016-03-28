@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/menu.css" media="screen">
+
+	<script src="http://code.jquery.com/jquery-2.2.0.js"></script>
+	<script src="../../scripts/menu.js"></script>
+
+    <title>Coding-Studio by Simon Fermor</title>
+</head>
+
+  <body>
+
+<header>
+	<div id="menu">
+	</div>
+</header>
+
+<div class="container">
+<h1>Session 7</h1>
+
+	<section>
+
+<p>We started by talking about the Google Go challenge and artificial intelligence.</p>
+
+  <p>We watched a video about Go and how it is so difficult for computers</p>
+
+  <p>We tried a quiz for a visual Turing test</p>
+
+		<p>We continued with Blockly and played the Turtle games</p>
+
+    <p>We then looked at some games from a JavaScript book and made changes to the hangman game</p>
+    
+    <table>
+      <tr style="text-align:top;">
+        <td>Level</td>
+        <td>Puzzle</td>
+        <td>JavaScript</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Draw a square</td>
+        <td><pre>
+for (var count = 0; count < 4; count++) {
+  moveForward(100);
+  turnRight(90);
+}
+        </pre></td>
+      </tr>
+     <tr>
+        <td>2</td>
+        <td>Draw a pentagon</td>
+        <td><pre>
+for (var count = 0; count < 5; count++) {
+  moveForward(100);
+  turnRight(72);
+}
+        </pre></td>
+      </tr>
+       <tr>
+        <td>3</td>
+        <td>Draw a yellow star</td>
+        <td><pre>
+penColour('#ffff00');
+for (var count = 0; count < 5; count++) {
+  moveForward(100);
+  turnRight(144);
+}
+        </pre></td>
+
+      </tr>
+       <tr>
+        <td>4</td>
+        <td>Draw a small yellow star and a line above</td>
+        <td><pre>
+          penColour('#ffff00');
+          for (var count = 0; count < 5; count++) {
+            moveForward(50);
+            turnRight(144);
+          }
+          penUp();
+          moveForward(150);
+          penDown();
+          moveForward(20);
+        </pre></td>
+      </tr>
+         <tr>
+          <td>5</td>
+          <td>Draw four stars in a square arrangement</td>
+          <td><pre>
+penColour('#ffff00');
+for (var count2 = 0; count2 < 4; count2++) {
+  for (var count = 0; count < 5; count++) {
+    moveForward(50);
+    turnRight(144);
+  }
+  penUp();
+  moveForward(150);
+  turnRight(90);
+  penDown();
+}
+          </pre></td>
+        </tr>
+
+         <tr>
+          <td>6</td>
+          <td>Draw three stars and a line</td>
+          <td><pre>
+penColour('#ffff00');
+for (var count2 = 0; count2 < 3; count2++) {
+  for (var count = 0; count < 5; count++) {
+    moveForward(50);
+    turnRight(144);
+  }
+  penUp();
+  moveForward(150);
+  turnRight(120);
+  penDown();
+}
+turnLeft(90);
+penUp();
+moveForward(100);
+penDown();
+moveForward(50);
+          </pre></td>
+        </tr>
+           <tr>
+            <td>7</td>
+            <td>Three stars and a group of lines</td>
+            <td><pre>
+penColour('#ffff00');
+for (var count2 = 0; count2 < 3; count2++) {
+  for (var count = 0; count < 5; count++) {
+    moveForward(50);
+    turnRight(144);
+  }
+  penUp();
+  moveForward(150);
+  turnRight(120);
+  penDown();
+}
+turnLeft(90);
+penUp();
+moveForward(100);
+penDown();
+for (var count3 = 0; count3 < 4; count3++) {
+  moveForward(50);
+  moveBackward(50);
+  turnRight(45);
+}
+            </pre></td>
+          </tr>
+           <tr>
+              <td>8</td>
+              <td>Draw three stars and a sun</td>
+              <td><pre>
+penColour('#ffff00');
+for (var count2 = 0; count2 < 3; count2++) {
+  for (var count = 0; count < 5; count++) {
+    moveForward(50);
+    turnRight(144);
+  }
+  penUp();
+  moveForward(150);
+  turnRight(120);
+  penDown();
+}
+turnLeft(90);
+penUp();
+moveForward(100);
+penDown();
+for (var count3 = 0; count3 < 360; count3++) {
+  moveForward(50);
+  moveBackward(50);
+  turnRight(1);
+}
+              </pre></td>
+            </tr>
+            <tr>
+             <td>9</td>
+             <td>Draw three stars and a moon crescent</td>
+             <td><pre>
+
+             </pre></td>
+           </tr>
+           <tr>
+            <td>10</td>
+            <td></td>
+            <td><pre>
+            </pre></td>
+          </tr>
+    </table>
+	</section>
+
+	<section>
+		<h3>Resources</h3>
+		<ul class="links">
+      <li><a href="https://www.youtube.com/watch?v=DFaUMjbsSPE">Video about Go Challenge</a></li>
+      <li><a href="https://www.newscientist.com/article/visual-turing-test">Visual Turing Test</a></li>
+      <li><a href="https://blockly-games.appspot.com/?lang=en">Blockly Games</a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+		</ul>
+	</section>
+
+</div>
+
+</body>
+</html>
