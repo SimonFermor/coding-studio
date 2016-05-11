@@ -25,10 +25,10 @@
 		<section id="links">
 		</section>
 	</div>
-	
+
 <script>
 $(document).ready(function(){
-	
+
 	var display_links = function(data) {
 		var html = '<ul class="links">';
 		console.log(data);
@@ -40,9 +40,9 @@ $(document).ready(function(){
 		$('#links').html(html);
 	};
 
-	var url = 'http://feeds.delicious.com/v2/json/simon.fermor/coding+studio?count=100&callback=display_links';
+	var url = 'http://feeds.del.icio.us/v2/json/simon.fermor/coding+studio?count=100&callback=display_links';
 	console.log(url);
-	
+
 	$.ajax({
 			url: url,
 			jsonpCallback: 'display_links',
